@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf881b1d-02a7-4973-a153-b188989e9711" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/PassportController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1605278892890" duration="2109000" />
       <workItem from="1605351774843" duration="9129000" />
       <workItem from="1605444534990" duration="1146000" />
-      <workItem from="1605445722001" duration="2657000" />
+      <workItem from="1605445722001" duration="3553000" />
     </task>
     <servers />
   </component>
