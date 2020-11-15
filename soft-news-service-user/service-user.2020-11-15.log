@@ -1,0 +1,62 @@
+2020-11-15 21:30:48.347 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-15 21:30:49.515 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-15 21:30:51.378 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 21:30:51.379 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-15 21:30:51.433 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-11-15 21:30:51.657 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-15 21:30:51.752 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=85196da5-199a-3983-bcc2-4629f6684b8b
+2020-11-15 21:30:52.230 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-15 21:30:52.242 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-15 21:30:52.242 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-15 21:30:52.242 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-15 21:30:52.412 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-15 21:30:52.412 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2820 ms
+2020-11-15 21:30:53.526 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-15 21:30:53.527 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 21:30:53.545 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-15 21:30:53.545 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 21:30:53.698 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 21:30:53.822 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-15 21:30:53.823 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-15 21:30:53.823 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-15 21:30:53.824 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-15 21:30:55.769 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-15 21:30:55.805 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-15 21:30:56.536 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-15 21:30:56.603 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-15 21:30:56.620 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-15 21:30:56.920 [main] INFO  com.soft1851.user.Application - Started Application in 10.34 seconds (JVM running for 12.323)
+2020-11-15 21:31:38.651 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 21:31:38.651 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-15 21:31:38.657 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-11-15 21:35:05.393 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-15 21:35:06.459 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-15 21:35:07.175 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 21:35:07.177 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-15 21:35:07.205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-11-15 21:35:07.353 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-15 21:35:07.419 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=85196da5-199a-3983-bcc2-4629f6684b8b
+2020-11-15 21:35:07.710 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-15 21:35:07.718 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-15 21:35:07.719 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-15 21:35:07.719 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-15 21:35:07.826 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-15 21:35:07.826 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+2020-11-15 21:35:08.472 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-15 21:35:08.472 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 21:35:08.476 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-15 21:35:08.476 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 21:35:08.559 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 21:35:08.654 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-15 21:35:08.654 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-15 21:35:08.655 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-15 21:35:08.655 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-15 21:35:09.826 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-15 21:35:09.848 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-15 21:35:10.553 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-15 21:35:10.569 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-15 21:35:10.579 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-15 21:35:10.721 [main] INFO  com.soft1851.user.Application - Started Application in 6.649 seconds (JVM running for 7.826)
+2020-11-15 21:35:18.198 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 21:35:18.199 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-15 21:35:18.208 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
