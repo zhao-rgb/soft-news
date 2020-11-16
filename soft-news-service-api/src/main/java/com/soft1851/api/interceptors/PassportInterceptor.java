@@ -25,7 +25,7 @@ public class PassportInterceptor implements HandlerInterceptor {
     public static  final String MOBILE_SMSCODE = "mobile:smscode";
 
     /**
-     * 拦截请求，访问contoller之前
+     * 拦截请求，访问controller之前
      * @param request
      * @param response
      * @param handler
