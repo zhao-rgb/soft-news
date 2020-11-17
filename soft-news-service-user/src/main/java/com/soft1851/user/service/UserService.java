@@ -1,7 +1,7 @@
 package com.soft1851.user.service;
 
 import com.soft1851.pojo.AppUser;
-import com.soft1851.pojo.vo.UpdateUserInfoBO;
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 
 /**
  * @author zhao

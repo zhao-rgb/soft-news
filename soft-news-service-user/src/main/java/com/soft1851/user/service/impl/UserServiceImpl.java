@@ -3,7 +3,7 @@ package com.soft1851.user.service.impl;
 import com.soft1851.enums.UserStatus;
 import com.soft1851.exception.GraceException;
 import com.soft1851.pojo.AppUser;
-import com.soft1851.pojo.vo.UpdateUserInfoBO;
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 import com.soft1851.result.ResponseStatusEnum;
 import com.soft1851.user.mapper.AppUserMapper;
 import com.soft1851.user.service.UserService;
