@@ -1,8 +1,10 @@
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\HelloControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\PassportInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\CorsConfig.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\UserTokenInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\UserControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\Swagger2.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\BaseInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\PassportControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\BaseController.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\InterceptorConfig.java

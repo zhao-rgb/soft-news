@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf881b1d-02a7-4973-a153-b188989e9711" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/interceptors/BaseInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/interceptors/UserTokenInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-common/target/soft-news-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/target/soft-news-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-model/target/classes/META-INF/soft-news-model.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-model/target/soft-news-model.jar" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/target/soft-news-model.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/UserControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/UserControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/config/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/config/InterceptorConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/user/UserControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/user/UserControllerApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/soft-news-service-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/soft-news-service-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/service-user.2020-11-17.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/service-user.2020-11-17.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/service/impl/UserServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/soft-news-service-user.jar" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/target/soft-news-service-user.jar" afterDir="false" />
     </list>
@@ -81,7 +83,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.1484375" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -176,7 +178,7 @@
       <workItem from="1605528712418" duration="689000" />
       <workItem from="1605538138653" duration="1088000" />
       <workItem from="1605575773054" duration="48000" />
-      <workItem from="1605580430204" duration="11188000" />
+      <workItem from="1605580430204" duration="12910000" />
     </task>
     <servers />
   </component>
@@ -191,10 +193,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605277523071" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1605591406228">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1605596073768">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605591406228" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605596073768" />
     <state x="351" y="5" key="CommitChangelistDialog2" timestamp="1605354441055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -207,38 +209,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605354058445" />
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom" timestamp="1605593721859">
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom" timestamp="1605596701471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605593721859" />
-    <state width="1493" height="245" key="GridCell.Tab.0.center" timestamp="1605593721859">
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605596701471" />
+    <state width="1493" height="245" key="GridCell.Tab.0.center" timestamp="1605596701471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605593721859" />
-    <state width="1493" height="245" key="GridCell.Tab.0.left" timestamp="1605593721859">
+    <state width="1493" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605596701471" />
+    <state width="1493" height="245" key="GridCell.Tab.0.left" timestamp="1605596701471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605593721859" />
-    <state width="1493" height="245" key="GridCell.Tab.0.right" timestamp="1605593721859">
+    <state width="1493" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605596701471" />
+    <state width="1493" height="245" key="GridCell.Tab.0.right" timestamp="1605596701471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605593721859" />
-    <state width="1493" height="245" key="GridCell.Tab.1.bottom" timestamp="1605593721863">
+    <state width="1493" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605596701471" />
+    <state width="1493" height="245" key="GridCell.Tab.1.bottom" timestamp="1605596701472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605593721863" />
-    <state width="1493" height="245" key="GridCell.Tab.1.center" timestamp="1605593721862">
+    <state width="1493" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605596701472" />
+    <state width="1493" height="245" key="GridCell.Tab.1.center" timestamp="1605596701472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605593721862" />
-    <state width="1493" height="245" key="GridCell.Tab.1.left" timestamp="1605593721861">
+    <state width="1493" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605596701472" />
+    <state width="1493" height="245" key="GridCell.Tab.1.left" timestamp="1605596701472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605593721861" />
-    <state width="1493" height="245" key="GridCell.Tab.1.right" timestamp="1605593721862">
+    <state width="1493" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605596701472" />
+    <state width="1493" height="245" key="GridCell.Tab.1.right" timestamp="1605596701472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605593721862" />
+    <state width="1493" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605596701472" />
     <state width="1493" height="252" key="GridCell.Tab.2.bottom" timestamp="1605589050241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -255,10 +257,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="252" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605589050241" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1605279840314">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1605595694292">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605279840314" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605595694292" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1605358870557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
