@@ -99,4 +99,12 @@ public class PassportController extends BaseController implements PassportContro
         // 5.返回用户状态
         return GraceResult.ok(userActiveStatus);
     }
+
+    @Override
+    public GraceResult logout(HttpServletRequest request, HttpServletResponse response, String userId) {
+        redis.del(REDIS_USER_TOKEN + ":" + userId);
+        setCookie(request,response,"utoken","",COOKIE_DELETE);
+        setCookie(request,response,"uid","",COOKIE_DELETE);
+        return GraceResult.ok();
+    }
 }
