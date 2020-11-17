@@ -10,6 +10,7 @@ import com.soft1851.pojo.vo.UserAccountInfoVo;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
 import com.soft1851.user.service.UserService;
+import com.soft1851.utils.JsonUtil;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -75,8 +76,19 @@ public class UserController extends BaseController implements UserControllerApi 
     }
 
     private AppUser getUser(String userId){
-        // TODO 本方法后续待扩展
-        return userService.getUser(userId);
+        // 1.查询redis中是否包含用户信息，如果包含则查询redis返回，如果不包含则查询数据库
+        String userJson = redis.get(REDIS_USER_INFO + ":" + userId);
+        AppUser user;
+        if (StringUtils.isNotBlank(userJson)) {
+            user = JsonUtil.jsonToPojo(userJson, AppUser.class);
+        } else {
+            user = userService.getUser(userId);
+            // 2.由于用户信息不怎么会变动，这类信息数据不会去查询数据库，完全可以把用户信息存入redis
+            // 哪怕修改信息，也不会立马体现，这也是弱一致性，在这里有过期时间，到时间用户信息会更新到页面显示
+            // 基本信息是属于数据一致性优先级比较低的，用户眼里看的主要以内容为主，至于文章是谁发的，一般来说不会过多关注
+            redis.set(REDIS_USER_INFO + ":" +userId, JsonUtil.objectToJson(user), 1);
+        }
+        return user;
 
     }
 }
