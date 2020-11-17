@@ -1,7 +1,10 @@
 package com.soft1851.user.controller;
 
+
+import com.soft1851.api.BaseController;
 import com.soft1851.api.controller.user.UserControllerApi;
 import com.soft1851.pojo.AppUser;
+import com.soft1851.pojo.vo.UpdateUserInfoBO;
 import com.soft1851.pojo.vo.UserAccountInfoVo;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
@@ -10,7 +13,11 @@ import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
+import java.util.Map;
 
 /**
  * @author zhao
@@ -21,15 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class UserController implements UserControllerApi {
+public class UserController extends BaseController implements UserControllerApi {
 
     private final UserService userService;
-
-//    @Override
-//    public GraceResult getAllUsers() {
-//        return GraceResult.ok(appUserMapper.selectAll());
-//    }
-
 
     @Override
     public GraceResult getUserInfo(String userId) {
@@ -40,10 +41,22 @@ public class UserController implements UserControllerApi {
         // 1.根据userId查询用户，调用内部封装方法（复用、扩展方便）
         AppUser user =getUser(userId);
         // 2.设置VO--需要展示的信息
-        UserAccountInfoVo accountVo = new UserAccountInfoVo();
+        UserAccountInfoVo accountInfoVo = new UserAccountInfoVo();
         // 3.属性拷贝
-        BeanUtils.copyProperties(user,accountVo);
-        return GraceResult.ok(accountVo);
+        BeanUtils.copyProperties(user,accountInfoVo);
+        return GraceResult.ok(accountInfoVo);
+    }
+
+    @Override
+    public GraceResult updateUserInfo(@Valid UpdateUserInfoBO updateUserInfoBO, BindingResult result) {
+        // 判断BindingResult是否保存错误的验证信息，如果有，则直接return
+        if(result.hasErrors()) {
+            Map<String, String> errorMap = getErrors(result);
+            return GraceResult.errorMap(errorMap);
+        }
+        // 执行更新用户信息操作
+        userService.updateUserInfo(updateUserInfoBO);
+        return GraceResult.ok();
     }
 
     private AppUser getUser(String userId){
