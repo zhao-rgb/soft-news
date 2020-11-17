@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf881b1d-02a7-4973-a153-b188989e9711" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/interceptors/UserActiveInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/aspect/ServiceLogAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +164,7 @@
       <workItem from="1605528712418" duration="689000" />
       <workItem from="1605538138653" duration="1088000" />
       <workItem from="1605575773054" duration="48000" />
-      <workItem from="1605580430204" duration="14905000" />
+      <workItem from="1605580430204" duration="16266000" />
     </task>
     <servers />
   </component>
