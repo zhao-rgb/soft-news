@@ -14,19 +14,24 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Date 2020/11/14
  * @Version 1.0
  **/
-@Api(value = "用户信息相关Controller",tags = {"用户信息相关Controller"})
+@Api(value = "用户Controller",tags = {"用户Controller"})
 @RequestMapping("user")
 public interface UserControllerApi {
 
+//    /**
+//     * 获取所有用户信息
+//     * @return
+//     */
+//    @ApiOperation(value = "获得所有用户信息",notes = "获得所有用户信息",httpMethod = "POST")
+//    @PostMapping("/all")
+//    GraceResult getAllUsers();
+
     /**
-     * 获取所有用户信息
+     * 获得用户基本信息
+     * @param userId
      * @return
      */
-    @ApiOperation(value = "获得所有用户信息",notes = "获得所有用户信息",httpMethod = "POST")
-    @PostMapping("/all")
-    GraceResult getAllUsers();
-
-    @ApiOperation(value = "获得用户基本信息",notes = "获得用户基本信息",httpMethod = "POST")
+    @ApiOperation(value = "获得用户账户信息",notes = "获得用户账户信息",httpMethod = "POST")
     @PostMapping("/userInfo")
     GraceResult getUserInfo(@RequestParam String userId);
 

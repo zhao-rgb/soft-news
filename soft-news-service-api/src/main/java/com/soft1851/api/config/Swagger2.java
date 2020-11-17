@@ -43,11 +43,11 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("新闻·自媒体接口api")
                 .contact(new Contact("zxl",
-                        "http://www.sn.com",
+                        "http://www.zxl.com",
                         "16422802@qq.com"))
                 .description("专为新闻·自媒体平台提供的api文档")
                 .version("1.0.1")
-                .termsOfServiceUrl("https://www.sn.com")
+                .termsOfServiceUrl("https://www.zxl.com")
                 .build();
     }
 }

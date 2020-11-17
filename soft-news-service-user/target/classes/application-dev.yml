@@ -13,4 +13,4 @@ spring:
 
 # 设置域名,在java代码中获取
 website:
-  domain-name: www.localhost
+  domain-name: zxl.com
