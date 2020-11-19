@@ -18,4 +18,14 @@ public interface UploadService {
      * @throws Exception 异常
      */
     String uploadFdfs(MultipartFile file,String fileExtName) throws Exception;
+
+    /**
+     *  oss上传文件
+     * @param file 文件
+     * @param userId 用户id
+     * @param fileExtName 扩展名
+     * @return 返回
+     * @throws Exception 异常
+     */
+    public String uploadOSS(MultipartFile file, String userId, String fileExtName) throws Exception;
 }
