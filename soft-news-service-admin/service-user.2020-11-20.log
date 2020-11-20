@@ -1,0 +1,292 @@
+2020-11-20 17:07:59.304 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:07:59.910 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:08:00.862 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:08:01.683 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:08:01.696 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:08:01.731 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-20 17:08:01.939 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=66602e02-7e3f-32f3-a1a6-e4fe4f783961
+2020-11-20 17:08:02.928 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:08:02.938 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:08:02.939 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:08:02.939 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:08:03.219 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:08:03.220 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2344 ms
+2020-11-20 17:08:03.419 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-20 17:08:03.420 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:08:03.436 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:08:03.852 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserMapper in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:11:02.036 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:11:02.603 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:11:03.530 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:11:04.600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:11:04.601 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:11:04.635 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-11-20 17:11:04.844 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4e61dbff-72dc-3f63-80ec-a4266402e245
+2020-11-20 17:11:05.850 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:11:05.864 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:11:05.864 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:11:05.864 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:11:05.987 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:11:05.987 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2428 ms
+2020-11-20 17:11:06.701 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-20 17:11:06.730 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:11:06.747 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:11:06.912 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserMapper in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:16:01.657 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:16:02.131 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:16:02.949 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:16:03.638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:16:03.640 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:16:03.668 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-11-20 17:16:03.859 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4e61dbff-72dc-3f63-80ec-a4266402e245
+2020-11-20 17:16:04.873 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:16:04.886 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:16:04.887 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:16:04.887 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:16:05.017 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:16:05.017 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2053 ms
+2020-11-20 17:16:05.520 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-20 17:16:05.536 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:16:05.546 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:16:05.686 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserMapper in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:16:31.848 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:16:32.363 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:16:33.191 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:16:33.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:16:33.681 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:16:33.711 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-11-20 17:16:33.924 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=234cb294-b361-360d-af4a-b8cc3feb79a2
+2020-11-20 17:16:34.762 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:16:34.774 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:16:34.774 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:16:34.775 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:16:34.894 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:16:34.895 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1687 ms
+2020-11-20 17:16:34.951 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'redis'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.utils.RedisOperator' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-20 17:16:34.953 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:16:34.967 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:16:35.118 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redis in com.soft1851.api.BaseController required a bean of type 'com.soft1851.utils.RedisOperator' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.utils.RedisOperator' in your configuration.
+
+2020-11-20 17:18:06.554 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:18:07.016 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:18:07.929 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:18:08.722 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:18:08.724 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:18:08.780 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-11-20 17:18:09.009 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4e61dbff-72dc-3f63-80ec-a4266402e245
+2020-11-20 17:18:09.987 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:18:10.001 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:18:10.001 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:18:10.002 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:18:10.117 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:18:10.117 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2173 ms
+2020-11-20 17:18:10.615 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-20 17:18:10.630 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:18:10.681 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:18:10.820 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserMapper in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:21:53.136 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:21:53.716 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:21:54.611 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:21:55.290 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:21:55.295 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:21:55.323 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-11-20 17:21:55.512 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4e61dbff-72dc-3f63-80ec-a4266402e245
+2020-11-20 17:21:56.480 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:21:56.492 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:21:56.493 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:21:56.493 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:21:56.619 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:21:56.619 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1994 ms
+2020-11-20 17:21:57.151 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-admin\target\classes\com\soft1851\admin\service\impl\AdminUserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-20 17:21:57.167 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:21:57.181 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:21:57.323 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:24:22.960 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:24:23.508 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:24:24.586 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:24:25.426 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:24:25.429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:24:25.468 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-11-20 17:24:25.689 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4e61dbff-72dc-3f63-80ec-a4266402e245
+2020-11-20 17:24:26.831 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:24:26.848 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:24:26.849 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:24:26.849 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:24:26.984 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:24:26.985 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2380 ms
+2020-11-20 17:24:27.590 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-admin\target\classes\com\soft1851\admin\service\impl\AdminUserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-20 17:24:27.614 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:24:27.629 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:24:27.799 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:24:53.284 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:24:53.786 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 17:24:54.644 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 17:24:55.793 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-20 17:24:55.849 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 17:24:55.852 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 17:24:55.877 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-11-20 17:24:56.037 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-20 17:24:56.129 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5e64beb5-cb7b-3994-9665-42b3a6346f18
+2020-11-20 17:24:57.454 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 17:24:57.466 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 17:24:57.466 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 17:24:57.466 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-20 17:24:57.580 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 17:24:57.580 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2919 ms
+2020-11-20 17:24:58.102 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminMsgController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-admin\target\classes\com\soft1851\admin\service\impl\AdminUserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.admin.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-20 17:24:58.119 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-20 17:24:58.130 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-20 17:24:58.269 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.admin.service.impl.AdminUserServiceImpl required a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.admin.mapper.AdminUserMapper' in your configuration.
+
+2020-11-20 17:25:54.495 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-20 17:25:54.972 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

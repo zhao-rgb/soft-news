@@ -5,10 +5,12 @@ E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\cont
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\Swagger2.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\BaseInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\PassportControllerApi.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\FileUploadInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\UserActiveInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\InterceptorConfig.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\my\mapper\MyMapper.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\HelloControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\PassportInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\files\FileUploadControllerApi.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\admin\AdminMsgControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\BaseController.java
