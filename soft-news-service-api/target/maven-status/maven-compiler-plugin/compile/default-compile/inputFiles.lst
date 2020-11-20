@@ -13,4 +13,5 @@ E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\cont
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\PassportInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\files\FileUploadControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\admin\AdminMsgControllerApi.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\AdminTokenInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\BaseController.java
