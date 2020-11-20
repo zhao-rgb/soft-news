@@ -3,6 +3,7 @@ package com.soft1851.admin.controller;
 import com.soft1851.admin.service.AdminUserService;
 import com.soft1851.api.BaseController;
 import com.soft1851.api.controller.admin.AdminMsgControllerApi;
+import com.soft1851.exception.GraceException;
 import com.soft1851.pojo.AdminUser;
 import com.soft1851.pojo.bo.AdminLoginBO;
 import com.soft1851.result.GraceResult;
@@ -60,5 +61,19 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         setCookie(request,response,"aToken",token,COOKIE_MONTH);
         setCookie(request,response,"aId",admin.getId(),COOKIE_MONTH);
         setCookie(request,response,"aName",admin.getAdminName(),COOKIE_MONTH);
+    }
+
+    @Override
+    public GraceResult adminLogin(String username) {
+        checkAdminExist(username);
+        return GraceResult.ok();
+    }
+
+    private void checkAdminExist(String username) {
+        AdminUser admin = adminUserService.queryAdminByUsername(username);
+
+        if (admin != null) {
+            GraceException.display(ResponseStatusEnum.ADMIN_NOT_EXIT_ERROR);
+        }
     }
 }
