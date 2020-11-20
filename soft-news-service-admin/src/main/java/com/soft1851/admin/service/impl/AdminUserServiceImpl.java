@@ -72,7 +72,7 @@ public class AdminUserServiceImpl implements AdminUserService {
     @Override
     public PageGridResult queryAdminList(Integer page, Integer pageSize) {
         Example adminExample = new Example(AdminUser.class);
-        adminExample.orderBy("createTime").desc();
+        adminExample.orderBy("createdTime").desc();
 
         PageHelper.startPage(page,pageSize);
         List<AdminUser> adminUserList = adminUserMapper.selectByExample(adminExample);
