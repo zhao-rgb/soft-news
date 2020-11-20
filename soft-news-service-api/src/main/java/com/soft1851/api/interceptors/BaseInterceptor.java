@@ -6,6 +6,8 @@ import com.soft1851.utils.RedisOperator;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.File;
+
 /**
  * @author zhao
  * @className BaseInterceptor
@@ -41,4 +43,33 @@ public class BaseInterceptor {
         // false: 请求被拦截，被驳回，验证出现问题;true: 请求在经过验证校验以后，确认是可以放行的
         return true;
     }
+
+
+    public boolean verifyUploadFile(File file) throws Exception {
+        if(file != null) {
+            // 获得文件上传的名称
+            String fileName = file.getName();
+            // 判断文件名不能为空
+            if (StringUtils.isNotBlank(fileName)) {
+                // 分割文件名
+                String[] fileNameArr = fileName.split("\\.");
+                // 获得后缀
+                String suffix = fileNameArr[fileNameArr.length - 1];
+                // 判断后缀符合我们的预定义规范
+                if (!"png".equalsIgnoreCase(suffix) &&
+                        !"jpg".equalsIgnoreCase(suffix) &&
+                        !"jpeg".equalsIgnoreCase(suffix)
+                ) {
+                    GraceException.display(ResponseStatusEnum.FILE_FORMATTER_FAILD);
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+        return true;
+    }
+
 }

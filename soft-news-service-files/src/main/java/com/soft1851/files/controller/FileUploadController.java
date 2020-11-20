@@ -5,6 +5,7 @@ import com.soft1851.files.resource.FileResource;
 import com.soft1851.files.service.UploadService;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
+import com.soft1851.utils.extend.AliImageReviewUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -29,6 +30,8 @@ public class FileUploadController implements FileUploadControllerApi {
     public final UploadService uploadService;
 
     public final FileResource fileResource;
+
+    public final AliImageReviewUtil aliImageReviewUtil;
 
     @Override
     public GraceResult uploadFile(String userId, MultipartFile file) throws Exception {
@@ -64,7 +67,30 @@ public class FileUploadController implements FileUploadControllerApi {
         } else {
             return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_NULL_ERROR);
         }
-        return GraceResult.ok(finalPath);
+        return GraceResult.ok(doAliImageReview(finalPath));
+        //return GraceResult.ok(finalPath);
+    }
+
+    /**
+     * 检测不通过的默认图片
+     */
+    public static final String FAILED_IMAGE_URL = "https://kkkksslls.oss-cn-beijing.aliyuncs.com/campus/短发11.jpeg";
+
+    /**
+     * 检测不通过的默认图片
+     */
+    private String doAliImageReview(String pendingImageUrl) {
+        log.info(pendingImageUrl);
+        boolean result = false;
+        try {
+            result = aliImageReviewUtil.reviewImage(pendingImageUrl);
+        } catch (Exception e) {
+            System.err.println("图片识别出错");
+        }
+        if (!result) {
+            return FAILED_IMAGE_URL;
+        }
+        return pendingImageUrl;
     }
 
     @Override
@@ -90,7 +116,9 @@ public class FileUploadController implements FileUploadControllerApi {
                         ) {
                             continue;
                         }
-                        // 执行上传
+                        // 执行fastdfs上传
+                        // path = uploadService.uploadFdfs(file,suffix);
+                        // 执行oss上传
                         path = uploadService.uploadOSS(file,userId,suffix);
 
                     } else {

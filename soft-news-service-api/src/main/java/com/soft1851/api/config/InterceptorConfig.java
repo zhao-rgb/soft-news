@@ -1,5 +1,6 @@
 package com.soft1851.api.config;
 
+import com.soft1851.api.interceptors.FileUploadInterceptor;
 import com.soft1851.api.interceptors.PassportInterceptor;
 import com.soft1851.api.interceptors.UserActiveInterceptor;
 import com.soft1851.api.interceptors.UserTokenInterceptor;
@@ -32,6 +33,11 @@ public class InterceptorConfig implements WebMvcConfigurer {
         return new UserActiveInterceptor();
     }
 
+    @Bean
+    public FileUploadInterceptor fileUploadInterceptor() {
+        return new FileUploadInterceptor();
+    }
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //注册拦截器,添加拦截路由
@@ -42,5 +48,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .addPathPatterns("/user/updateUserInfo");
         registry.addInterceptor(userActiveInterceptor())
                 .addPathPatterns("/fans/follow");
+//        registry.addInterceptor(fileUploadInterceptor())
+//                .addPathPatterns("/fs/uploadFace");
     }
 }
