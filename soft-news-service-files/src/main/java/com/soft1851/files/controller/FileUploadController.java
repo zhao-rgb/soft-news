@@ -1,5 +1,6 @@
 package com.soft1851.files.controller;
 
+import com.mongodb.client.gridfs.model.GridFSFile;
 import com.soft1851.api.controller.files.FileUploadControllerApi;
 import com.soft1851.files.resource.FileResource;
 import com.soft1851.files.service.UploadService;
@@ -11,10 +12,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -36,6 +43,7 @@ public class FileUploadController implements FileUploadControllerApi {
     public final UploadService uploadService;
     public final FileResource fileResource;
     public final AliImageReviewUtil aliImageReviewUtil;
+
     public final GridFsTemplate gridFsTemplate;
 
     @Override
@@ -163,6 +171,32 @@ public class FileUploadController implements FileUploadControllerApi {
             e.printStackTrace();
         }
         return GraceResult.ok(objectId.toHexString());
+    }
+
+    @Override
+    public GraceResult readInGridFs(String faceId, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        //根据id查询文件
+        GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(faceId)));
+        if (gridFSFile == null) {
+            throw new RuntimeException("No file with id: " + faceId);
+        }
+        System.out.println(gridFSFile.getFilename());
+        //获取流对象
+        GridFsResource resource = gridFsTemplate.getResource(gridFSFile);
+        InputStream inputStream;
+        String content = null;
+        byte[] bytes = new byte[(int) gridFSFile.getLength()];
+        try {
+            inputStream = resource.getInputStream();
+            int read = inputStream.read(bytes);
+            inputStream.close();
+            ServletOutputStream outputStream = response.getOutputStream();
+            outputStream.write(bytes);
+            outputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return GraceResult.ok(new String(bytes));
     }
 
 

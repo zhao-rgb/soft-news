@@ -1,0 +1,124 @@
+2020-11-22 00:05:34.102 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-22 00:05:34.587 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-22 00:05:35.459 [main] INFO  com.soft1851.admin.AdminApplication - The following profiles are active: dev
+2020-11-22 00:05:36.281 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-22 00:05:36.282 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-22 00:05:36.301 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 MongoDB repository interfaces.
+2020-11-22 00:05:36.316 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-22 00:05:36.316 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-22 00:05:36.326 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-11-22 00:05:36.477 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-22 00:05:36.575 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=52875661-21a5-32a1-925f-37a2329d9967
+2020-11-22 00:05:37.728 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-22 00:05:37.741 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-22 00:05:37.742 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-22 00:05:37.742 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-22 00:05:37.865 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-22 00:05:37.865 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2386 ms
+2020-11-22 00:05:39.591 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-22 00:05:39.591 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-22 00:05:39.597 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-22 00:05:39.598 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-22 00:05:39.749 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 00:05:39.885 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-22 00:05:39.886 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-22 00:05:39.887 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-22 00:05:39.887 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-22 00:05:40.020 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-22 00:05:40.123 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-22 00:05:40.141 [cluster-ClusterId{value='5fb93ad4aa0316533a5980e3', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:19}] to 121.196.104.253:27017
+2020-11-22 00:05:40.165 [cluster-ClusterId{value='5fb93ad4aa0316533a5980e3', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20296800}
+2020-11-22 00:05:40.186 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-22 00:05:41.486 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2020-11-22 00:05:41.511 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2020-11-22 00:05:42.251 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-22 00:05:42.268 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-22 00:05:42.277 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-22 00:05:42.429 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: adminLoginUsingPOST_1
+2020-11-22 00:05:42.454 [main] INFO  com.soft1851.admin.AdminApplication - Started AdminApplication in 9.774 seconds (JVM running for 10.342)
+2020-11-22 00:35:30.775 [http-nio-8005-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 00:35:30.775 [http-nio-8005-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-22 00:35:30.791 [http-nio-8005-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-11-22 00:35:30.882 [http-nio-8005-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.admin.service.impl.AdminUserServiceImpl，updateAdmin====
+2020-11-22 00:35:30.980 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-22 00:35:30.986 [http-nio-8005-exec-2] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-22 00:35:31.264 [http-nio-8005-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-22 00:35:31.928 [http-nio-8005-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1046
+2020-11-22 00:58:06.259 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-22 00:58:06.862 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-22 00:58:08.216 [main] INFO  com.soft1851.admin.AdminApplication - The following profiles are active: dev
+2020-11-22 00:58:09.194 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-22 00:58:09.196 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-22 00:58:09.215 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-22 00:58:09.230 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-22 00:58:09.231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-22 00:58:09.241 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-11-22 00:58:09.403 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-22 00:58:09.501 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=52875661-21a5-32a1-925f-37a2329d9967
+2020-11-22 00:58:11.043 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-22 00:58:11.057 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-22 00:58:11.057 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-22 00:58:11.057 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-22 00:58:11.192 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-22 00:58:11.193 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2955 ms
+2020-11-22 00:58:13.514 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-22 00:58:13.514 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-22 00:58:13.521 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-22 00:58:13.521 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-22 00:58:13.684 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 00:58:13.821 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-22 00:58:13.822 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-22 00:58:13.823 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-22 00:58:13.823 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-22 00:58:13.956 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-22 00:58:14.118 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-22 00:58:14.121 [cluster-ClusterId{value='5fb94725f3996f45f1dc35c0', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:24}] to 121.196.104.253:27017
+2020-11-22 00:58:14.141 [cluster-ClusterId{value='5fb94725f3996f45f1dc35c0', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17575600}
+2020-11-22 00:58:14.153 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-22 00:58:15.717 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2020-11-22 00:58:15.748 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2020-11-22 00:58:16.760 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-22 00:58:16.778 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-22 00:58:16.788 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-22 00:58:16.940 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: adminLoginUsingPOST_1
+2020-11-22 00:58:16.967 [main] INFO  com.soft1851.admin.AdminApplication - Started AdminApplication in 12.71 seconds (JVM running for 13.46)
+2020-11-22 01:00:56.567 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-22 01:00:57.124 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-22 01:00:58.373 [main] INFO  com.soft1851.admin.AdminApplication - The following profiles are active: dev
+2020-11-22 01:00:59.382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-22 01:00:59.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-22 01:00:59.404 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-22 01:00:59.418 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-22 01:00:59.419 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-22 01:00:59.427 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-11-22 01:00:59.595 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-22 01:00:59.722 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=52875661-21a5-32a1-925f-37a2329d9967
+2020-11-22 01:01:01.244 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-22 01:01:01.259 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-22 01:01:01.259 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-22 01:01:01.259 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-22 01:01:01.376 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-22 01:01:01.377 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2984 ms
+2020-11-22 01:01:03.278 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-22 01:01:03.278 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-22 01:01:03.284 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-22 01:01:03.284 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-22 01:01:03.446 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 01:01:03.587 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-22 01:01:03.588 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-22 01:01:03.589 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-22 01:01:03.589 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-22 01:01:03.730 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-22 01:01:03.851 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-22 01:01:03.855 [cluster-ClusterId{value='5fb947cf08cb8d1392f3c4e0', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:25}] to 121.196.104.253:27017
+2020-11-22 01:01:03.877 [cluster-ClusterId{value='5fb947cf08cb8d1392f3c4e0', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19185899}
+2020-11-22 01:01:03.894 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-22 01:01:05.446 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2020-11-22 01:01:05.472 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2020-11-22 01:01:06.732 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-22 01:01:06.752 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-22 01:01:06.765 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-22 01:01:06.936 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: adminLoginUsingPOST_1
+2020-11-22 01:01:06.964 [main] INFO  com.soft1851.admin.AdminApplication - Started AdminApplication in 12.034 seconds (JVM running for 12.58)
+2020-11-22 01:05:10.364 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-22 01:05:10.908 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
