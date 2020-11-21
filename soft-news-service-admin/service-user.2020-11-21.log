@@ -1,0 +1,44 @@
+2020-11-21 17:14:21.579 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-21 17:14:23.188 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-21 17:14:24.709 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-21 17:14:28.698 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-21 17:14:28.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-21 17:14:28.736 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-11-21 17:14:28.950 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-21 17:14:29.107 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=13db055f-aa6c-389f-8140-64f5cd989279
+2020-11-21 17:14:30.797 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-21 17:14:30.815 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-21 17:14:30.815 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-21 17:14:30.815 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-21 17:14:31.045 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-21 17:14:31.045 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6278 ms
+2020-11-21 17:14:34.050 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-21 17:14:34.051 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-21 17:14:34.063 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-21 17:14:34.063 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-21 17:14:34.224 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-21 17:14:34.381 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-21 17:14:34.385 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-21 17:14:34.385 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-21 17:14:34.386 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-21 17:14:35.974 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2020-11-21 17:14:36.017 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2020-11-21 17:14:36.710 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-21 17:14:36.880 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-21 17:14:36.897 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-21 17:14:37.090 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: adminLoginUsingPOST_1
+2020-11-21 17:14:37.114 [main] INFO  com.soft1851.admin.Application - Started Application in 18.203 seconds (JVM running for 19.678)
+2020-11-21 17:16:12.884 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-21 17:16:12.885 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-21 17:16:12.897 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-11-21 17:16:13.051 [http-nio-8005-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.admin.service.impl.AdminUserServiceImpl，queryAdminByUsername====
+2020-11-21 17:16:13.194 [http-nio-8005-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-21 17:16:13.199 [http-nio-8005-exec-5] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-21 17:16:13.973 [http-nio-8005-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-21 17:16:14.045 [http-nio-8005-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：994
+2020-11-21 17:16:14.440 [http-nio-8005-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.admin.service.impl.AdminUserServiceImpl，queryAdminByUsername====
+2020-11-21 17:16:14.443 [http-nio-8005-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-21 17:16:56.494 [http-nio-8005-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.admin.service.impl.AdminUserServiceImpl，queryAdminByUsername====
+2020-11-21 17:16:56.498 [http-nio-8005-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：4
+2020-11-21 17:37:17.282 [http-nio-8005-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.admin.service.impl.AdminUserServiceImpl，queryAdminByUsername====
+2020-11-21 17:37:17.287 [http-nio-8005-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：4
