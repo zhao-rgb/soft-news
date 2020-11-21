@@ -1,0 +1,74 @@
+2020-11-21 19:13:31.511 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-21 19:13:31.980 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-21 19:13:32.852 [main] INFO  com.soft1851.files.FilesApplication - The following profiles are active: dev
+2020-11-21 19:13:33.876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-21 19:13:33.877 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-21 19:13:33.898 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-11-21 19:13:34.086 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=68466589-c3f0-3484-90a9-35147ecfa507
+2020-11-21 19:13:34.503 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-21 19:13:34.512 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-21 19:13:34.512 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-21 19:13:34.512 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-21 19:13:34.622 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-21 19:13:34.622 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1755 ms
+2020-11-21 19:13:35.695 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileUploadController' defined in file [E:\play-code\soft-news\soft-news-service-files\target\classes\com\soft1851\files\controller\FileUploadController.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gridFsBucket' defined in class path resource [com/soft1851/files/GridFsConfig.class]: Unsatisfied dependency expressed through method 'gridFsBucket' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is java.lang.NoSuchMethodError: com.mongodb.MongoClientSettings$Builder.uuidRepresentation(Lorg/bson/UuidRepresentation;)Lcom/mongodb/MongoClientSettings$Builder;
+2020-11-21 19:13:35.697 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-21 19:13:35.708 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-21 19:13:35.715 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.applyUuidRepresentation(MongoClientFactorySupport.java:85)
+
+The following method did not exist:
+
+    com.mongodb.MongoClientSettings$Builder.uuidRepresentation(Lorg/bson/UuidRepresentation;)Lcom/mongodb/MongoClientSettings$Builder;
+
+The method's class, com.mongodb.MongoClientSettings$Builder, is available from the following locations:
+
+    jar:file:/D:/tools/maven_jar/org/mongodb/mongodb-driver-core/3.11.1/mongodb-driver-core-3.11.1.jar!/com/mongodb/MongoClientSettings$Builder.class
+
+The class hierarchy was loaded from the following locations:
+
+    com.mongodb.MongoClientSettings.Builder: file:/D:/tools/maven_jar/org/mongodb/mongodb-driver-core/3.11.1/mongodb-driver-core-3.11.1.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of com.mongodb.MongoClientSettings$Builder
+
+2020-11-21 19:15:00.526 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-21 19:15:00.948 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-21 19:15:01.789 [main] INFO  com.soft1851.files.FilesApplication - The following profiles are active: dev
+2020-11-21 19:15:02.584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-21 19:15:02.586 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-21 19:15:02.607 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-11-21 19:15:02.801 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=68466589-c3f0-3484-90a9-35147ecfa507
+2020-11-21 19:15:03.299 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-21 19:15:03.311 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-21 19:15:03.311 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-21 19:15:03.311 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-21 19:15:03.424 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-21 19:15:03.424 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1617 ms
+2020-11-21 19:15:04.129 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-21 19:15:04.226 [cluster-ClusterId{value='5fb8f6b8b7cbb63332685eed', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:8}] to 121.196.104.253:27017
+2020-11-21 19:15:04.246 [cluster-ClusterId{value='5fb8f6b8b7cbb63332685eed', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19195100}
+2020-11-21 19:15:04.827 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-21 19:15:04.828 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-21 19:15:04.831 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-21 19:15:04.831 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-21 19:15:04.973 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-21 19:15:06.151 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-21 19:15:06.172 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-21 19:15:06.974 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-21 19:15:06.990 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-21 19:15:06.999 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-21 19:15:07.143 [main] INFO  com.soft1851.files.FilesApplication - Started FilesApplication in 7.886 seconds (JVM running for 9.2)

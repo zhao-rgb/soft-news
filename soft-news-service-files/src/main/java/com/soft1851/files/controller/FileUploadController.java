@@ -1,18 +1,25 @@
 package com.soft1851.files.controller;
 
+import com.mongodb.client.gridfs.GridFSBucket;
 import com.soft1851.api.controller.files.FileUploadControllerApi;
 import com.soft1851.files.resource.FileResource;
 import com.soft1851.files.service.UploadService;
+import com.soft1851.pojo.bo.NewAdminBO;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
 import com.soft1851.utils.extend.AliImageReviewUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import sun.misc.BASE64Decoder;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,10 +35,9 @@ import java.util.List;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class FileUploadController implements FileUploadControllerApi {
     public final UploadService uploadService;
-
     public final FileResource fileResource;
-
     public final AliImageReviewUtil aliImageReviewUtil;
+    public final GridFSBucket gridFSBucket;
 
     @Override
     public GraceResult uploadFile(String userId, MultipartFile file) throws Exception {
@@ -136,5 +142,22 @@ public class FileUploadController implements FileUploadControllerApi {
             }
         }
         return GraceResult.ok(imageUrlList);
+    }
+
+    @Override
+    public GraceResult uploadToGridFs(NewAdminBO newAdminBO, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        // base64字符串
+        String file64 = newAdminBO.getImg64();
+        // 将字符串转换为byte数组
+        byte[] bytes = new BASE64Decoder().decodeBuffer(file64.trim());
+        // 转换为输入流
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
+        // 上传
+        ObjectId fileId = gridFSBucket.uploadFromStream(newAdminBO.getUsername() + ".jpg", inputStream);
+        System.out.println("上传完成。文件ID：" + fileId);
+        // 文件在mongodb中的id
+        String fileIdStr = fileId.toString();
+        System.out.println("fileIdStr=" + fileIdStr);
+        return GraceResult.ok(fileIdStr);
     }
 }

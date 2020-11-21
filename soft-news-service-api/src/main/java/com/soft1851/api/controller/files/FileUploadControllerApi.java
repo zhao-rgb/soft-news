@@ -1,12 +1,17 @@
 package com.soft1851.api.controller.files;
 
+import com.soft1851.pojo.bo.NewAdminBO;
 import com.soft1851.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author zhao
@@ -39,4 +44,18 @@ public interface FileUploadControllerApi {
     @PostMapping("/uploadSomeFiles")
     GraceResult uploadSomeFiles(@RequestParam String userId,
                                 MultipartFile[] files) throws Exception;
+
+
+    /**
+     * 文件上传到mongodb的GridFS
+     * @param newAdminBO 入参
+     * @param request 请求
+     * @param response 响应
+     * @return 返回
+     * @throws Exception 异常
+     */
+    @ApiOperation(value = "上传到mongodb的GridFS",notes = "上传到mongodb的GridFS",httpMethod = "POST")
+    @PostMapping("uploadToGridFS")
+    GraceResult uploadToGridFs(@RequestBody NewAdminBO newAdminBO,
+                               HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
