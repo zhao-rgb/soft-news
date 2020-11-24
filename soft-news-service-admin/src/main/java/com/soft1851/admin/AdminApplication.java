@@ -12,7 +12,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @Date 2020/11/20
  * @Version 1.0
  **/
-@SpringBootApplication
+@SpringBootApplication//(exclude = DataSourceAutoConfiguration.class)
 @MapperScan(basePackages = "com.soft1851.admin.mapper")
 @ComponentScan(basePackages = {"com.soft1851", "org.n3r.idworker"})
 public class AdminApplication {

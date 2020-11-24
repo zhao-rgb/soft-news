@@ -271,3 +271,7 @@ java.lang.IllegalArgumentException: Filename must not be null
 2020-11-22 01:04:59.134 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-22 01:04:59.273 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
 2020-11-22 01:04:59.285 [main] INFO  com.soft1851.files.FilesApplication - Started FilesApplication in 9.233 seconds (JVM running for 10.609)
+2020-11-22 01:05:20.367 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 01:05:20.368 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-22 01:05:20.377 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-11-22 01:05:20.780 [http-nio-8004-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:29}] to 121.196.104.253:27017

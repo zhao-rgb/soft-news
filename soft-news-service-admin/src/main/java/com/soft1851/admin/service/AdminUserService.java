@@ -18,7 +18,7 @@ public interface AdminUserService {
      * @param username 用户名
      * @return AdminUser
      */
-    AdminUser queryAdminByUsername(String username);
+    AdminUser queryAdminByUserName(String username);
 
     /**
      * 新增管理员

@@ -37,7 +37,7 @@ public class AdminUserServiceImpl implements AdminUserService {
     public final Sid sid;
 
     @Override
-    public AdminUser queryAdminByUsername(String username) {
+    public AdminUser queryAdminByUserName(String username) {
         Example adminUserExample = new Example(AdminUser.class);
         Example.Criteria adminUserCriteria = adminUserExample.createCriteria();
         adminUserCriteria.andEqualTo("username",username);
@@ -91,7 +91,7 @@ public class AdminUserServiceImpl implements AdminUserService {
 
     @Override
     public void updateAdmin(String username, String faceId) {
-        AdminUser adminUser = queryAdminByUsername(username);
+        AdminUser adminUser = queryAdminByUserName(username);
         adminUser.setFaceId(faceId);
         adminUserMapper.updateByPrimaryKey(adminUser);
     }
