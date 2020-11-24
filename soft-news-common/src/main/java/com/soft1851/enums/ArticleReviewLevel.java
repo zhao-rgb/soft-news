@@ -5,7 +5,7 @@ package com.soft1851.enums;
  */
 
 public enum ArticleReviewLevel {
-    //
+    //文章
     PASS("PASS", "自动审核通过"),
     BLOCK("BLOCK", "自动审核不通过"),
     REVIEW("REVIEW", "建议人工复审");
