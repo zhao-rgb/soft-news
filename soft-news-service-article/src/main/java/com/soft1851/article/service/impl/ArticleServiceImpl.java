@@ -39,7 +39,6 @@ public class ArticleServiceImpl implements ArticleService {
     private final Sid sid;
     private final ArticleMapperCustom articleMapperCustom;
     private final AliTextReviewUtil aliTextReviewUtil;
-    private final NewArticleBO newArticleBO;
 
     @Override
     public void createArticle(NewArticleBO newArticleBO, Category category) {
@@ -66,7 +65,22 @@ public class ArticleServiceImpl implements ArticleService {
         if (res != 1){
             GraceException.display(ResponseStatusEnum.ARTICLE_CREATE_ERROR);
         }
-        //后续通过阿里智能AI实现对文章文本的自动检测（自动审核）
+        // 通过阿里智能AI实现对文章文本的自动检测
+        String reviewResult = aliTextReviewUtil.reviewTextContent(newArticleBO.getTitle() + newArticleBO.getContent());
+        log.info("审核结果" + reviewResult);
+        if(ArticleReviewLevel.PASS.type.equalsIgnoreCase(reviewResult)) {
+            log.info("审核通过");
+            // 修改文章状态为：审核通过
+            this.updateArticleStatus(articleId,ArticleReviewStatus.SUCCESS.type);
+        } else if(ArticleReviewLevel.REVIEW.type.equalsIgnoreCase(reviewResult)) {
+            log.info("需要人工复审");
+            // 修改文章状态为：需要人工复审
+            this.updateArticleStatus(articleId,ArticleReviewStatus.WAUTUBG_MANUAL.type);
+        } else if(ArticleReviewLevel.BLOCK.type.equalsIgnoreCase(reviewResult)) {
+            log.info("审核不通过");
+            // 修改文章状态为：审核不通过
+            this.updateArticleStatus(articleId,ArticleReviewStatus.FAILED.type);
+        }
     }
 
 
@@ -91,22 +105,6 @@ public class ArticleServiceImpl implements ArticleService {
             GraceException.display(ResponseStatusEnum.ARTICLE_REVIEW_ERROR);
         }
 
-        // 通过阿里智能AI实现对文章文本的自动检测
-        String reviewResult = aliTextReviewUtil.reviewTextContent(newArticleBO.getTitle() + newArticleBO.getContent());
-        log.info("审核结果" + reviewResult);
-        if(ArticleReviewLevel.PASS.type.equalsIgnoreCase(reviewResult)) {
-            log.info("审核通过");
-            // 修改文章状态为：审核通过
-            this.updateArticleStatus(articleId,ArticleReviewStatus.SUCCESS.type);
-        } else if(ArticleReviewLevel.REVIEW.type.equalsIgnoreCase(reviewResult)) {
-            log.info("需要人工复审");
-            // 修改文章状态为：需要人工复审
-            this.updateArticleStatus(articleId,ArticleReviewStatus.WAUTUBG_MANUAL.type);
-        } else if(ArticleReviewLevel.BLOCK.type.equalsIgnoreCase(reviewResult)) {
-            log.info("审核不通过");
-            // 修改文章状态为：审核不通过
-            this.updateArticleStatus(articleId,ArticleReviewStatus.FAILED.type);
-        }
     }
 }
 
