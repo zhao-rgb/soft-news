@@ -1,0 +1,918 @@
+2020-11-25 11:10:40.639 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:10:41.275 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:10:42.251 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:10:44.751 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:10:44.752 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:10:44.776 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:10:44.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:10:44.830 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:10:44.852 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2020-11-25 11:10:45.142 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:10:45.264 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7f9c2544-5684-3b39-bce2-66aec52246e8
+2020-11-25 11:10:46.201 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:10:46.234 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:10:46.234 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:10:46.234 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:10:46.416 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:10:46.416 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4122 ms
+2020-11-25 11:10:46.906 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+2020-11-25 11:10:46.908 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:10:46.919 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:10:46.939 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.article.ArticleApplication.main(ArticleApplication.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 59 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$b00c8f6c.CGLIB$sqlSessionFactory$2(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$b00c8f6c$$FastClassBySpringCGLIB$$fd75c9e1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$b00c8f6c.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 60 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:126)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:80)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 73 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素内容必须由格式正确的字符数据或标记组成。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2571)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2661)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:258)
+	... 76 common frames omitted
+2020-11-25 11:13:52.077 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:13:52.357 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:13:53.167 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:13:53.940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:13:53.940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:13:53.957 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:13:53.969 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:13:53.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:13:53.977 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:13:54.117 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:13:54.196 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7f9c2544-5684-3b39-bce2-66aec52246e8
+2020-11-25 11:13:54.639 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:13:54.648 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:13:54.649 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:13:54.649 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:13:54.752 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:13:54.752 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1571 ms
+2020-11-25 11:13:55.102 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+2020-11-25 11:13:55.104 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:13:55.120 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:13:55.136 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.article.ArticleApplication.main(ArticleApplication.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 59 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80.CGLIB$sqlSessionFactory$2(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80$$FastClassBySpringCGLIB$$e71868ca.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 60 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:126)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:80)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 73 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素内容必须由格式正确的字符数据或标记组成。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2571)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2661)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:258)
+	... 76 common frames omitted
+2020-11-25 11:14:51.668 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:14:51.942 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:14:52.726 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:14:53.431 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:14:53.432 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:14:53.448 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:14:53.458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:14:53.458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:14:53.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:14:53.593 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:14:53.657 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7f9c2544-5684-3b39-bce2-66aec52246e8
+2020-11-25 11:14:54.038 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:14:54.047 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:14:54.047 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:14:54.048 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:14:54.143 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:14:54.143 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1403 ms
+2020-11-25 11:14:54.375 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+2020-11-25 11:14:54.377 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:14:54.387 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:14:54.398 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.article.ArticleApplication.main(ArticleApplication.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 59 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80.CGLIB$sqlSessionFactory$2(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80$$FastClassBySpringCGLIB$$e71868ca.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 60 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:126)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:80)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 73 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素内容必须由格式正确的字符数据或标记组成。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2571)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2661)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:258)
+	... 76 common frames omitted
+2020-11-25 11:17:20.008 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:17:20.384 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:17:21.361 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:17:22.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:17:22.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:17:22.054 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:17:22.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:17:22.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:17:22.071 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:17:22.210 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:17:22.290 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7f9c2544-5684-3b39-bce2-66aec52246e8
+2020-11-25 11:17:22.684 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:17:22.692 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:17:22.692 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:17:22.692 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:17:22.786 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:17:22.786 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1411 ms
+2020-11-25 11:17:23.032 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+2020-11-25 11:17:23.034 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:17:23.045 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:17:23.054 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.article.ArticleApplication.main(ArticleApplication.java:21)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleMapper' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\mapper\ArticleMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1404)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1509)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 59 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\play-code\soft-news\soft-news-service-article\target\classes\mapper\ArticleMapperCustom.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.sqlSessionFactory(MapperAutoConfiguration.java:157)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80.CGLIB$sqlSessionFactory$2(<generated>)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80$$FastClassBySpringCGLIB$$e71868ca.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9c38ec80.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 60 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 29; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:126)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:80)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 73 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素内容必须由格式正确的字符数据或标记组成。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2571)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2661)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:258)
+	... 76 common frames omitted
+2020-11-25 11:22:40.730 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:22:41.041 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:22:42.007 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:22:42.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:22:42.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:22:42.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:22:42.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:22:42.707 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:22:42.714 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:22:42.845 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:22:42.909 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7f9c2544-5684-3b39-bce2-66aec52246e8
+2020-11-25 11:22:43.279 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:22:43.287 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:22:43.287 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:22:43.287 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:22:43.376 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:22:43.376 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1351 ms
+2020-11-25 11:22:45.264 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:22:45.265 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:22:45.268 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:22:45.268 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:22:45.393 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 11:22:45.499 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-25 11:22:45.500 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-25 11:22:45.500 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-25 11:22:45.500 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-25 11:22:45.790 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 11:22:45.859 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:22:45.882 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:22:45.895 [cluster-ClusterId{value='5fbdce0524b57668b0b903ad', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:290}] to 121.196.104.253:27017
+2020-11-25 11:22:45.915 [cluster-ClusterId{value='5fbdce0524b57668b0b903ad', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16409900}
+2020-11-25 11:22:46.267 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-25 11:22:47.063 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:22:47.082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 11:22:47.801 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 11:22:47.811 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 11:22:47.818 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 11:22:47.974 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 8.78 seconds (JVM running for 10.044)
+2020-11-25 11:22:50.013 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-25 11:22:50.603 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-25 11:22:50.622 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:22:50.692 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：69
+2020-11-25 11:23:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:23:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:23:08.805 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 11:23:08.806 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 11:23:08.841 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 35 ms
+2020-11-25 11:23:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:23:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:23:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:23:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:23:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:23:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:23:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:23:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:23:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:23:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:23:59.819 [http-nio-8001-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，createArticle====
+2020-11-25 11:23:59.937 [http-nio-8001-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：118
+2020-11-25 11:24:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:24:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:24:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:24:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:24:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:24:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:24:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:24:30.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:24:40.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:24:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:24:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:24:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:25:00.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:25:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:25:10.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:25:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-25 11:25:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:25:20.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:25:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:25:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:25:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:25:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:25:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:25:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:26:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:26:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:26:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:26:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:26:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:26:20.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:26:30.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:26:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:26:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:26:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:26:50.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:26:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:27:00.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:27:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:27:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:27:10.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:27:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:27:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:27:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:27:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:27:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:27:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:27:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:27:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:28:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:28:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:28:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:28:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:28:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:28:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:28:30.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:28:30.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:28:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:28:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:28:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:28:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:29:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:29:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:29:10.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:29:10.019 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:29:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:29:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:29:30.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:29:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:29:40.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:29:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:29:48.470 [http-nio-8001-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，createArticle====
+2020-11-25 11:29:48.919 [http-nio-8001-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：449
+2020-11-25 11:29:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:29:50.547 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：44
+2020-11-25 11:30:00.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:30:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:30:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:30:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:30:20.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:30:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:30:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:30:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:30:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:30:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:30:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:30:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:31:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:31:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:31:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:20.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:31:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:30.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:31:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:40.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:31:40.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:31:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:00.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:32:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:32:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:32:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:32:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:32:40.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:32:50.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:33:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:33:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:33:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:33:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:33:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:33:20.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:33:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:33:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:33:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:33:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:33:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:33:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:34:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:34:00.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:34:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:34:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:34:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:34:40.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:50.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:34:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:35:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:35:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:35:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:35:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:35:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:35:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:35:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:35:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:35:40.001 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:35:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:35:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:35:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:36:00.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:36:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:36:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:36:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:36:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:36:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:36:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:36:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:36:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:36:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:36:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:36:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:37:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:37:00.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:37:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:37:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:37:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:37:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:37:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:37:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:37:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:37:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:37:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:37:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:38:00.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:38:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:38:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:38:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:38:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:38:20.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:38:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:38:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:38:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:38:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:38:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:38:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:39:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:39:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：4
+2020-11-25 11:39:10.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:39:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:39:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:39:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:39:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:39:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:39:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:39:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:39:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:39:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:40:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:40:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:40:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:40:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:40:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:40:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:40:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:40:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:40:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:40:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:40:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:40:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:41:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:41:00.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:41:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:41:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:41:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:41:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:41:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:41:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:41:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:41:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:41:50.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:41:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:42:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:42:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:42:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:42:10.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:42:20.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:42:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:42:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:42:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:42:40.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:42:40.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:42:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:42:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:43:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:43:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:43:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:43:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:43:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:43:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:43:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:43:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:43:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:43:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:43:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:43:50.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:44:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:44:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:44:10.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:44:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:44:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:44:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:44:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:44:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:44:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:44:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:44:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:44:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:45:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:45:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:45:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:45:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-25 11:45:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:45:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:45:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:45:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:45:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:45:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:45:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:45:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:46:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:46:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:46:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:46:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:46:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:46:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:46:30.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:46:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:46:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:46:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:46:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-25 11:46:50.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:47:03.322 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:47:03.704 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:47:05.008 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:47:05.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:47:05.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:47:05.713 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:47:05.721 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:47:05.722 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:47:05.729 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:47:05.846 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:47:05.909 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=631b4d5c-6ec8-3957-9e5f-20b66c51c564
+2020-11-25 11:47:06.283 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:47:06.292 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:47:06.292 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:47:06.292 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:47:06.393 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:47:06.393 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1371 ms
+2020-11-25 11:47:07.233 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\controller\ArticleController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleServiceImpl' defined in file [E:\play-code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\service\impl\ArticleServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 4; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.pojo.bo.NewArticleBO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-11-25 11:47:07.234 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:47:07.244 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:47:07.503 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 4 of constructor in com.soft1851.article.service.impl.ArticleServiceImpl required a bean of type 'com.soft1851.pojo.bo.NewArticleBO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.pojo.bo.NewArticleBO' in your configuration.
+

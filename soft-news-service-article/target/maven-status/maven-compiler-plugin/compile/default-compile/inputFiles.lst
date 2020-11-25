@@ -1,5 +1,6 @@
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\ArticleApplication.java
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\controller\ArticleController.java
+E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\mapper\ArticleMapperCustom.java
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\mapper\ArticleMapper.java
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\service\ArticleService.java
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\service\CategoryService.java
@@ -7,3 +8,4 @@ E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\arti
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\mapper\CategoryMapper.java
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\service\impl\ArticleServiceImpl.java
 E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\service\impl\CategoryServiceImpl.java
+E:\play-code\soft-news\soft-news-service-article\src\main\java\com\soft1851\article\task\TaskPublishArticle.java
