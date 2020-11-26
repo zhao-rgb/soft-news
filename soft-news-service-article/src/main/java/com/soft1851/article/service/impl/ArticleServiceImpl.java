@@ -11,6 +11,7 @@ import com.soft1851.exception.GraceException;
 import com.soft1851.pojo.Article;
 import com.soft1851.pojo.Category;
 import com.soft1851.pojo.bo.NewArticleBO;
+import com.soft1851.pojo.vo.ArticleDetailVO;
 import com.soft1851.result.ResponseStatusEnum;
 import com.soft1851.utils.extend.AliTextReviewUtil;
 import lombok.RequiredArgsConstructor;
@@ -139,6 +140,21 @@ public class ArticleServiceImpl implements ArticleService {
         criteria.andEqualTo("publishUserId",userId);
         criteria.andEqualTo("id",articleId);
         return articleExample;
+    }
+
+
+    @Override
+    public ArticleDetailVO queryDetail(String articleId) {
+        Article article = new Article();
+        article.setId(articleId);
+        article.setIsAppoint(YesOrNo.No.type);
+        article.setIsDelete(YesOrNo.No.type);
+        article.setArticleStatus(ArticleReviewStatus.SUCCESS.type);
+        Article result = articleMapper.selectOne(article);
+        ArticleDetailVO detailVO = new ArticleDetailVO();
+        BeanUtils.copyProperties(result,detailVO);
+        detailVO.setCover(result.getArticleCover());
+        return detailVO;
     }
 }
 

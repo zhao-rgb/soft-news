@@ -19,6 +19,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -90,5 +92,31 @@ public class UserController extends BaseController implements UserControllerApi 
         }
         return user;
 
+    }
+
+    @Override
+    public GraceResult queryByIds(String userIds) {
+        if (StringUtils.isBlank(userIds)) {
+            return GraceResult.errorCustom(ResponseStatusEnum.USER_NOT_EXIST_ERROR);
+        }
+        List<AppUserVo> publisherList = new ArrayList<>();
+        List<String> userIdList = JsonUtil.jsonToList(userIds,String.class);
+        assert userIdList != null;
+        for (String userId : userIdList) {
+            // 获得用户基本信息
+            AppUserVo userVo = getBasicUserInfo(userId);
+            // 添加到publisherList
+            publisherList.add(userVo);
+        }
+        return GraceResult.ok(publisherList);
+    }
+
+    private AppUserVo getBasicUserInfo(String userId) {
+        // 1.根据userId查询用户的信息
+        AppUser user = getUser(userId);
+        // 2.返回用户信息
+        AppUserVo userVo = new AppUserVo();
+        BeanUtils.copyProperties(user,userVo);
+        return userVo;
     }
 }

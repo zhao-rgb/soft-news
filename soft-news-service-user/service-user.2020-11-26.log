@@ -543,3 +543,712 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2020-11-26 15:59:20.512 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-11-26 15:59:20.512 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2020-11-26 15:59:20.523 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-11-26 16:07:58.062 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，queryMobileIsExist====
+2020-11-26 16:07:58.138 [http-nio-8003-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 16:07:58.310 [http-nio-8003-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 16:07:58.361 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：299
+2020-11-26 16:07:58.365 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，createUser====
+2020-11-26 16:07:58.387 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：22
+2020-11-26 16:10:09.497 [http-nio-8003-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，queryMobileIsExist====
+2020-11-26 16:10:09.501 [http-nio-8003-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：4
+2020-11-26 16:10:09.502 [http-nio-8003-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，createUser====
+2020-11-26 16:10:09.506 [http-nio-8003-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：4
+2020-11-26 16:11:44.632 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，queryMobileIsExist====
+2020-11-26 16:11:44.635 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 16:11:44.636 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，createUser====
+2020-11-26 16:11:44.640 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：4
+2020-11-26 16:13:31.648 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:13:31.650 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:13:31.651 [http-nio-8003-exec-2] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:13:31.657 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：6
+2020-11-26 16:13:31.672 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：22
+2020-11-26 16:13:38.594 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:13:38.594 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:13:38.594 [http-nio-8003-exec-3] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:13:38.597 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 16:13:38.603 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：9
+2020-11-26 16:13:44.649 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:13:44.649 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:13:44.649 [http-nio-8003-exec-4] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:13:44.651 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:13:44.656 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：7
+2020-11-26 16:13:50.938 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:13:50.938 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:13:50.938 [http-nio-8003-exec-5] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:13:50.940 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:13:50.988 [http-nio-8003-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+### The error may exist in com/soft1851/user/mapper/FansMapper.java (best guess)
+### The error may involve com.soft1851.user.mapper.FansMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO fans  ( id,writer_id,fan_id,face,fan_nickname,sex,province ) VALUES( ?,?,?,?,?,?,? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+; Column 'sex' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy182.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy180.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy105.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy108.insert(Unknown Source)
+	at com.soft1851.user.service.impl.FansServiceImpl.follow(FansServiceImpl.java:62)
+	at com.soft1851.user.service.impl.FansServiceImpl$$FastClassBySpringCGLIB$$7affce8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.user.service.impl.FansServiceImpl$$EnhancerBySpringCGLIB$$a3923991.follow(<generated>)
+	at com.soft1851.user.controller.FansController.follow(FansController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 16:13:55.442 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:13:55.443 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:13:55.443 [http-nio-8003-exec-6] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:13:55.445 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:13:55.450 [http-nio-8003-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+### The error may exist in com/soft1851/user/mapper/FansMapper.java (best guess)
+### The error may involve com.soft1851.user.mapper.FansMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO fans  ( id,writer_id,fan_id,face,fan_nickname,sex,province ) VALUES( ?,?,?,?,?,?,? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+; Column 'sex' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy182.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy180.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy105.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy108.insert(Unknown Source)
+	at com.soft1851.user.service.impl.FansServiceImpl.follow(FansServiceImpl.java:62)
+	at com.soft1851.user.service.impl.FansServiceImpl$$FastClassBySpringCGLIB$$7affce8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.user.service.impl.FansServiceImpl$$EnhancerBySpringCGLIB$$a3923991.follow(<generated>)
+	at com.soft1851.user.controller.FansController.follow(FansController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 16:14:16.274 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:14:16.275 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:14:16.275 [http-nio-8003-exec-7] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:14:16.277 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:14:16.399 [http-nio-8003-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '201116C41BY4ZD8H-201126BG37H13FY8' for key 'fans.writer_id'
+### The error may exist in com/soft1851/user/mapper/FansMapper.java (best guess)
+### The error may involve com.soft1851.user.mapper.FansMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO fans  ( id,writer_id,fan_id,face,fan_nickname,sex,province ) VALUES( ?,?,?,?,?,?,? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '201116C41BY4ZD8H-201126BG37H13FY8' for key 'fans.writer_id'
+; Duplicate entry '201116C41BY4ZD8H-201126BG37H13FY8' for key 'fans.writer_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '201116C41BY4ZD8H-201126BG37H13FY8' for key 'fans.writer_id'] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '201116C41BY4ZD8H-201126BG37H13FY8' for key 'fans.writer_id'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy182.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy180.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy105.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy108.insert(Unknown Source)
+	at com.soft1851.user.service.impl.FansServiceImpl.follow(FansServiceImpl.java:62)
+	at com.soft1851.user.service.impl.FansServiceImpl$$FastClassBySpringCGLIB$$7affce8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.user.service.impl.FansServiceImpl$$EnhancerBySpringCGLIB$$a3923991.follow(<generated>)
+	at com.soft1851.user.controller.FansController.follow(FansController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 16:15:21.139 [http-nio-8003-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:15:21.139 [http-nio-8003-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:15:21.139 [http-nio-8003-exec-8] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:15:21.142 [http-nio-8003-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 16:15:21.147 [http-nio-8003-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+### The error may exist in com/soft1851/user/mapper/FansMapper.java (best guess)
+### The error may involve com.soft1851.user.mapper.FansMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO fans  ( id,writer_id,fan_id,face,fan_nickname,sex,province ) VALUES( ?,?,?,?,?,?,? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+; Column 'sex' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'sex' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy182.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy180.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy105.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy108.insert(Unknown Source)
+	at com.soft1851.user.service.impl.FansServiceImpl.follow(FansServiceImpl.java:62)
+	at com.soft1851.user.service.impl.FansServiceImpl$$FastClassBySpringCGLIB$$7affce8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.user.service.impl.FansServiceImpl$$EnhancerBySpringCGLIB$$a3923991.follow(<generated>)
+	at com.soft1851.user.controller.FansController.follow(FansController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 16:15:56.691 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，follow====
+2020-11-26 16:15:56.691 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.UserServiceImpl，getUser====
+2020-11-26 16:15:56.691 [http-nio-8003-exec-2] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库查询用户信息!!!
+2020-11-26 16:15:56.693 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:15:56.698 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：7
+2020-11-26 16:16:07.878 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 16:16:07.879 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 16:16:07.880 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 16:16:07.882 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:17:04.942 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 16:17:04.984 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：41
+2020-11-26 16:18:44.333 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 16:18:44.351 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：17
+2020-11-26 16:18:44.351 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 16:18:44.352 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 16:19:40.614 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 16:19:40.617 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:19:40.617 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 16:19:40.619 [http-nio-8003-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 16:19:59.100 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 16:19:59.140 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：40
+2020-11-26 17:17:41.742 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 17:17:42.084 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 17:17:43.071 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-26 17:17:43.860 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:17:43.860 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 17:17:43.876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 MongoDB repository interfaces.
+2020-11-26 17:17:43.886 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:17:43.887 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 17:17:43.893 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-11-26 17:17:44.029 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-26 17:17:44.114 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1017a36b-fd10-3209-9121-9a8b1f847ee3
+2020-11-26 17:17:44.640 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-26 17:17:44.651 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-26 17:17:44.652 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 17:17:44.652 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 17:17:44.778 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 17:17:44.779 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1689 ms
+2020-11-26 17:17:46.244 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:17:46.245 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:17:46.249 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:17:46.249 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:17:46.360 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 17:17:46.478 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 17:17:46.479 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 17:17:46.479 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 17:17:46.479 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 17:17:46.574 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 17:17:46.637 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:17:46.657 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:17:47.683 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-26 17:17:47.705 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-26 17:17:48.384 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 17:17:48.396 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 17:17:48.405 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 17:17:48.550 [main] INFO  com.soft1851.user.Application - Started Application in 8.142 seconds (JVM running for 9.574)
+2020-11-26 17:17:48.616 [cluster-ClusterId{value='5fbf72baf4862d29388de81a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-26 17:18:49.724 [http-nio-8003-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-26 17:18:49.724 [http-nio-8003-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-26 17:18:49.732 [http-nio-8003-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-26 17:18:49.766 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 17:18:49.766 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:18:49.813 [http-nio-8003-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 17:18:49.999 [http-nio-8003-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 17:18:50.046 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：280
+2020-11-26 17:18:50.046 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:18:50.048 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:18:50.117 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：351
+2020-11-26 17:23:32.838 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:23:32.839 [http-nio-8003-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 17:23:32.843 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：5
+2020-11-26 17:23:32.843 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:23:32.845 [http-nio-8003-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:23:32.906 [http-nio-8003-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：67
+2020-11-26 17:23:57.415 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:23:57.415 [http-nio-8003-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 17:23:57.418 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 17:23:57.419 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:23:57.420 [http-nio-8003-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:23:57.463 [http-nio-8003-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：48
+2020-11-26 17:28:09.542 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:28:09.543 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 17:28:09.546 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 17:28:09.546 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:28:09.548 [http-nio-8003-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:28:09.587 [http-nio-8003-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：44
+2020-11-26 17:28:19.970 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:28:19.970 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryRegionRatioCounts====
+2020-11-26 17:28:19.973 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 17:28:19.973 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.user.service.impl.FansServiceImpl，queryFansCounts====
+2020-11-26 17:28:19.976 [http-nio-8003-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:28:20.020 [http-nio-8003-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：50
+2020-11-26 17:46:18.912 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 17:46:19.268 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 17:46:20.116 [main] INFO  com.soft1851.user.UserApplication - The following profiles are active: dev
+2020-11-26 17:46:20.807 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:46:20.807 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 17:46:20.825 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-26 17:46:20.834 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:46:20.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 17:46:20.842 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-11-26 17:46:20.962 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-26 17:46:21.031 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9d0a4363-f0a0-3999-aaab-eb715f7e88e0
+2020-11-26 17:46:21.455 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-26 17:46:21.465 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-26 17:46:21.465 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 17:46:21.465 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 17:46:21.565 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 17:46:21.566 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1435 ms
+2020-11-26 17:46:23.088 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:46:23.088 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:46:23.092 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:46:23.092 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:46:23.204 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 17:46:23.312 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 17:46:23.312 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 17:46:23.313 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 17:46:23.313 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 17:46:23.421 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 17:46:23.487 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:46:23.511 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:46:24.528 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-26 17:46:24.549 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-26 17:46:25.243 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 17:46:25.258 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 17:46:25.270 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 17:46:25.421 [main] INFO  com.soft1851.user.UserApplication - Started UserApplication in 7.831 seconds (JVM running for 9.158)
+2020-11-26 17:46:25.479 [cluster-ClusterId{value='5fbf796fff28d91887fe6275', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-26 18:06:37.055 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 18:06:37.329 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

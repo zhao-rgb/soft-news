@@ -52,3 +52,210 @@
 2020-11-26 15:03:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
 2020-11-26 15:03:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
 2020-11-26 15:03:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:49:09.268 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 17:49:09.541 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 17:49:10.318 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-26 17:49:11.041 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:49:11.042 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 17:49:11.058 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 MongoDB repository interfaces.
+2020-11-26 17:49:11.066 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:49:11.067 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 17:49:11.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-26 17:49:11.198 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-26 17:49:11.266 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=631b4d5c-6ec8-3957-9e5f-20b66c51c564
+2020-11-26 17:49:11.656 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-26 17:49:11.664 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-26 17:49:11.664 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 17:49:11.665 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 17:49:11.758 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 17:49:11.758 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1425 ms
+2020-11-26 17:49:13.278 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:49:13.278 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:49:13.283 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:49:13.284 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:49:13.431 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 17:49:13.573 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 17:49:13.574 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 17:49:13.574 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 17:49:13.574 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 17:49:13.677 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 17:49:13.751 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:49:13.779 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:49:13.980 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-26 17:49:14.791 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-26 17:49:14.811 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-26 17:49:15.505 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 17:49:15.517 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 17:49:15.525 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 17:49:15.664 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 7.722 seconds (JVM running for 9.082)
+2020-11-26 17:49:15.851 [cluster-ClusterId{value='5fbf7a1921d8d372f9578505', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 121.196.104.253:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-26 17:49:20.012 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 17:49:20.182 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 17:49:20.188 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:49:20.226 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：38
+2020-11-26 17:49:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:49:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:49:40.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:49:40.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:49:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:49:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:50:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:50:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:50:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:50:10.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:50:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:50:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:50:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:50:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:50:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:50:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:50:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:50:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:51:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:51:00.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:51:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:51:10.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:51:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:51:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:51:27.458 [cluster-ClusterId{value='5fbf7a1921d8d372f9578505', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:2}] to 121.196.104.253:27017
+2020-11-26 17:51:27.487 [cluster-ClusterId{value='5fbf7a1921d8d372f9578505', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27122900}
+2020-11-26 17:51:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:51:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:51:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:51:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:51:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:51:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:52:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:52:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:52:30.375 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 17:52:30.645 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 17:52:31.477 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-26 17:52:32.227 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:52:32.227 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 17:52:32.243 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 MongoDB repository interfaces.
+2020-11-26 17:52:32.252 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 17:52:32.253 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 17:52:32.261 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-26 17:52:32.390 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-26 17:52:32.468 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=631b4d5c-6ec8-3957-9e5f-20b66c51c564
+2020-11-26 17:52:33.007 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-26 17:52:33.019 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-26 17:52:33.019 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 17:52:33.019 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 17:52:33.241 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 17:52:33.242 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1747 ms
+2020-11-26 17:52:35.629 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:52:35.629 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:52:35.633 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 17:52:35.633 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 17:52:35.761 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 17:52:35.875 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 17:52:35.876 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 17:52:35.876 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 17:52:35.876 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 17:52:35.980 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 17:52:36.058 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:52:36.093 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 17:52:36.098 [cluster-ClusterId{value='5fbf7ae366a2572f0c6bc403', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:4}] to 121.196.104.253:27017
+2020-11-26 17:52:36.121 [cluster-ClusterId{value='5fbf7ae366a2572f0c6bc403', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20660500}
+2020-11-26 17:52:36.343 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-26 17:52:37.297 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-26 17:52:37.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-26 17:52:38.050 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 17:52:38.060 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 17:52:38.069 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 17:52:38.202 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 9.176 seconds (JVM running for 10.511)
+2020-11-26 17:52:40.021 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 17:52:40.187 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 17:52:40.193 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:52:40.227 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：34
+2020-11-26 17:52:43.650 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-26 17:52:43.651 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-26 17:52:43.659 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-26 17:52:50.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:52:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:53:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:53:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:53:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:53:10.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:53:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:53:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:53:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:53:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:53:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:53:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:53:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:53:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:54:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:54:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 17:54:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:54:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:54:20.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:54:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:54:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:54:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:54:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:54:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:54:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:54:50.073 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 17:55:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 17:55:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 18:06:06.390 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 18:06:06.870 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 18:06:07.822 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-26 18:06:08.617 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 18:06:08.618 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 18:06:08.636 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-26 18:06:08.649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 18:06:08.651 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 18:06:08.659 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-26 18:06:08.825 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-26 18:06:08.898 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=631b4d5c-6ec8-3957-9e5f-20b66c51c564
+2020-11-26 18:06:09.339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-26 18:06:09.347 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-26 18:06:09.348 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 18:06:09.348 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 18:06:09.452 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 18:06:09.452 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1611 ms
+2020-11-26 18:06:12.132 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 18:06:12.132 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 18:06:12.137 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 18:06:12.137 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 18:06:12.306 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 18:06:12.463 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 18:06:12.463 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 18:06:12.464 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 18:06:12.464 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 18:06:12.589 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 18:06:12.691 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 18:06:12.698 [cluster-ClusterId{value='5fbf7e144f864144c6f28ccf', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:5}] to 121.196.104.253:27017
+2020-11-26 18:06:12.765 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 18:06:12.766 [cluster-ClusterId{value='5fbf7e144f864144c6f28ccf', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33398600}
+2020-11-26 18:06:13.022 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-26 18:06:13.955 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-26 18:06:13.982 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-26 18:06:14.785 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 18:06:14.799 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 18:06:14.809 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 18:06:14.973 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 9.989 seconds (JVM running for 11.395)
+2020-11-26 18:06:20.014 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 18:06:20.192 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 18:06:20.198 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 18:06:20.234 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：36

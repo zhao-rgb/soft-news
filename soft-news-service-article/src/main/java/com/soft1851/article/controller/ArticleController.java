@@ -100,6 +100,11 @@ public class ArticleController extends BaseController implements ArticleControll
         return GraceResult.ok();
     }
 
+    @Override
+    public GraceResult detail(String articleId) {
+        return null;
+    }
+
 
 }
 

@@ -2,6 +2,7 @@ package com.soft1851.article.service;
 
 import com.soft1851.pojo.Category;
 import com.soft1851.pojo.bo.NewArticleBO;
+import com.soft1851.pojo.vo.ArticleDetailVO;
 
 /**
  * @author zhao
@@ -43,4 +44,11 @@ public interface ArticleService {
      * @param articleId 文章id
      */
     void withdrawArticle(String userId, String articleId);
+
+    /**
+     * 查询文章详情
+     * @param articleId 文章id
+     * @return ArticleDetailVO
+     */
+    ArticleDetailVO queryDetail(String articleId);
 }

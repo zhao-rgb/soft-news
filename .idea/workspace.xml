@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf881b1d-02a7-4973-a153-b188989e9711" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/enums/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/pojo/vo/FansCountsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/pojo/vo/RegionRatioVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/pojo/vo/ArticleDetailVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/FansControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/FansControllerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/user/FansControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/user/FansControllerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/article/ArticleControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/article/ArticleControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/UserControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/UserControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/article/ArticleControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/article/ArticleControllerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/user/UserControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/target/classes/com/soft1851/api/controller/user/UserControllerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/service-user.2020-11-26.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/service-user.2020-11-26.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/target/classes/com/soft1851/article/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/target/classes/com/soft1851/article/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/target/classes/com/soft1851/article/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/target/classes/com/soft1851/article/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/target/classes/com/soft1851/article/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/target/classes/com/soft1851/article/service/impl/ArticleServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-user/service-user.2020-11-26.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/service-user.2020-11-26.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/FansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/FansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/FansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/FansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/impl/FansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/impl/FansServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/controller/FansController.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/controller/FansController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/service/FansService.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/service/FansService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/service/impl/FansServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/service/impl/FansServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/target/classes/com/soft1851/user/controller/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,7 +128,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.UserApplication">
     <configuration name="AdminApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.admin.AdminApplication" />
       <module name="soft-news-service-admin" />
@@ -146,19 +151,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="soft-news-service-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.user.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,9 +181,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="soft-news-service-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ArticleApplication" />
         <item itemvalue="Spring Boot.FilesApplication" />
         <item itemvalue="Application.AdminApplication" />
@@ -268,7 +273,7 @@
       <workItem from="1606288306666" duration="4918000" />
       <workItem from="1606371084112" duration="1200000" />
       <workItem from="1606372788621" duration="226000" />
-      <workItem from="1606373222431" duration="4693000" />
+      <workItem from="1606373222431" duration="9543000" />
     </task>
     <servers />
   </component>
@@ -287,10 +292,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606270717899" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606377174943">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606384703390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606377174943" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606384703390" />
     <state x="480" y="271" width="575" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606178259606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -311,38 +316,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="309" width="382" height="206" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1606143986838" />
-    <state width="1235" height="203" key="GridCell.Tab.0.bottom" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.0.bottom" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.0.center" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.0.center" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.0.left" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.0.left" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.0.right" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.0.right" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.1.bottom" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.1.bottom" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.1.center" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.1.center" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.1.left" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.1.left" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
-    <state width="1235" height="203" key="GridCell.Tab.1.right" timestamp="1606377743861">
+    <state width="1235" height="203" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
+    <state width="1235" height="203" key="GridCell.Tab.1.right" timestamp="1606385194077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1235" height="203" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606377743861" />
+    <state width="1235" height="203" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606385194077" />
     <state width="1493" height="252" key="GridCell.Tab.2.bottom" timestamp="1605611335022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -375,9 +380,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606288523880" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606145380950">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606383392181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606145380950" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606383392181" />
   </component>
 </project>
