@@ -40,6 +40,11 @@ public class InterceptorConfig implements WebMvcConfigurer {
         return new AdminTokenInterceptor();
     }
 
+    @Bean
+    public ArticleReadInterceptor articleReadInterceptor(){
+        return new ArticleReadInterceptor();
+    }
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //注册拦截器,添加拦截路由
@@ -54,5 +59,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
 //                .addPathPatterns("/fs/uploadFace");
         registry.addInterceptor(adminTokenInterceptor())
                 .addPathPatterns("/adminMsg/adminIsExist");
+
+        registry.addInterceptor(articleReadInterceptor())
+                .addPathPatterns("/article/readArticle");
     }
 }

@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 /**
@@ -68,4 +69,15 @@ public interface ArticleControllerApi {
     @GetMapping("detail")
     @ApiOperation(value = "文章详情查询", notes = "文章详情查询", httpMethod = "GET")
     GraceResult detail(@RequestParam String articleId);
+
+    /***
+     *阅读文章，累加阅读量
+     *
+     * @param articleId 文章id
+     * @param request 请求
+     * @return GraceResult
+     */
+    @PostMapping("readArticle")
+    @ApiOperation(value = "阅读文章，累加阅读量",notes = "阅读文章，累加阅读量",httpMethod = "POST")
+    GraceResult readArticle(@RequestParam String articleId, HttpServletRequest request);
 }

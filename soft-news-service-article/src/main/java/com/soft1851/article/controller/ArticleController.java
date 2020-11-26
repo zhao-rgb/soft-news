@@ -12,6 +12,7 @@ import com.soft1851.pojo.vo.AppUserVo;
 import com.soft1851.pojo.vo.ArticleDetailVO;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
+import com.soft1851.utils.IpUtil;
 import com.soft1851.utils.JsonUtil;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
@@ -21,6 +22,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.HashSet;
 import java.util.List;
@@ -155,5 +157,13 @@ public class ArticleController extends BaseController implements ArticleControll
     }
 
 
+    @Override
+    public GraceResult readArticle(String articleId, HttpServletRequest request) {
+        String userIp = IpUtil.getRequestIp(request);
+        // 设置针对当前用户ip的永久存在的key，存入到redis，表示该ip的用户已经阅读过了，无法累加阅读量
+        redis.setnx(REDIS_ALREADY_READ+":"+articleId+":"+userIp,userIp);
+        redis.increment(REDIS_ARTICLE_READ_COUNTS+":"+articleId,1);
+        return GraceResult.ok();
+    }
 }
 

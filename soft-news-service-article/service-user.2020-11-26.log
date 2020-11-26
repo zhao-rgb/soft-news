@@ -824,3 +824,1266 @@ java.lang.IllegalArgumentException: Source must not be null
 2020-11-26 18:22:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
 2020-11-26 18:22:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
 2020-11-26 18:22:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:57:22.374 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 21:57:23.013 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 21:57:24.124 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-26 21:57:26.560 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 21:57:26.562 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 21:57:26.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 0 MongoDB repository interfaces.
+2020-11-26 21:57:26.708 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 21:57:26.711 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 21:57:26.739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2020-11-26 21:57:27.253 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-26 21:57:27.377 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=631b4d5c-6ec8-3957-9e5f-20b66c51c564
+2020-11-26 21:57:28.385 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-26 21:57:28.417 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-26 21:57:28.418 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 21:57:28.418 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 21:57:28.659 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 21:57:28.661 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4499 ms
+2020-11-26 21:57:32.425 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 21:57:32.425 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 21:57:32.441 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 21:57:32.442 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 21:57:32.819 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 21:57:33.198 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 21:57:33.199 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 21:57:33.200 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 21:57:33.201 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 21:57:33.520 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 21:57:33.736 [cluster-ClusterId{value='5fbfb44d96bf0729ae26fb78', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11}] to 121.196.104.253:27017
+2020-11-26 21:57:33.764 [cluster-ClusterId{value='5fbfb44d96bf0729ae26fb78', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24034900}
+2020-11-26 21:57:33.837 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 21:57:33.863 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 21:57:34.207 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-26 21:57:35.724 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-26 21:57:36.018 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-26 21:57:36.884 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 21:57:37.074 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 21:57:37.176 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 21:57:37.381 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 16.438 seconds (JVM running for 18.574)
+2020-11-26 21:57:40.024 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 21:57:40.631 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 21:57:40.649 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:57:40.697 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-26 21:57:40.697 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-26 21:57:40.723 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2020-11-26 21:57:40.738 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：89
+2020-11-26 21:57:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:57:50.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:58:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:58:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 21:58:00.900 [http-nio-8001-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 21:58:01.213 [http-nio-8001-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '201124FM2P6G2P28'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '201124FM2P6G2P28'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '201124FM2P6G2P28'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '201124FM2P6G2P28'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '201124FM2P6G2P28'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 21:58:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:58:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:58:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:58:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 21:58:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:58:30.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:58:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:58:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:58:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:58:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:58:55.046 [http-nio-8001-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 21:58:55.050 [http-nio-8001-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '201125AZD3380HZC'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 21:59:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:59:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 21:59:10.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:59:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:59:20.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:59:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 21:59:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:59:30.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 21:59:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:59:40.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 21:59:48.722 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 21:59:48.730 [http-nio-8001-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '201125AZD3380HZC'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 21:59:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 21:59:50.090 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：87
+2020-11-26 22:00:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:00:00.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:00:06.503 [http-nio-8001-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 22:00:06.507 [http-nio-8001-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '20112585PTM55214'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 22:00:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:00:10.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:00:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:00:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:00:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:00:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:00:40.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:00:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:00:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:00:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:01:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:01:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:01:10.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:01:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:01:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:01:20.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:01:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:01:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:01:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:01:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:01:50.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:01:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:02:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:02:00.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:02:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:02:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:02:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:02:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:02:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:02:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:02:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:02:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:02:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:02:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:03:00.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:03:00.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:03:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:03:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:03:20.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:03:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:03:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:03:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:03:38.464 [http-nio-8001-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 22:03:38.467 [http-nio-8001-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '20112585PTM55214'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '20112585PTM55214'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 22:03:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:03:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-26 22:03:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:03:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:04:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:04:00.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:04:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:04:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:04:20.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:04:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:04:30.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:04:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:04:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:04:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:04:50.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:04:50.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:05:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:05:00.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:05:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:05:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:05:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:05:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:05:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:05:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:05:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:05:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:05:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:05:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:06:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:06:00.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:06:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:06:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:06:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:06:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:06:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:06:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:06:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:06:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:06:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:06:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:07:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:07:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:07:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:07:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:07:11.991 [http-nio-8001-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 22:07:11.994 [http-nio-8001-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '201125AZD3380HZC'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 22:07:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:07:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:07:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:07:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:07:40.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:07:40.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:07:50.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:07:50.019 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:08:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:08:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:08:09.039 [http-nio-8001-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 22:08:09.041 [http-nio-8001-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '201125AZD3380HZC'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 22:08:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:08:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:08:15.502 [http-nio-8001-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，queryDetail====
+2020-11-26 22:08:15.505 [http-nio-8001-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+### The error may exist in com/soft1851/article/mapper/ArticleMapper.java (best guess)
+### The error may involve com.soft1851.article.mapper.ArticleMapper.selectByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id,title,category_id,article_type,article_cover,is_appoint,article_status,publish_user_id,publish_time,read_counts,comment_counts,mongo_file_id,is_delete,create_time,update_time,content  FROM article  WHERE  id = ? AND title = ? AND category_id = ? AND article_type = ? AND article_cover = ? AND is_appoint = ? AND article_status = ? AND publish_user_id = ? AND publish_time = ? AND read_counts = ? AND comment_counts = ? AND mongo_file_id = ? AND is_delete = ? AND create_time = ? AND update_time = ? AND content = ?
+### Cause: java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+; uncategorized SQLException; SQL state [HY000]; error code [1525]; Incorrect DATETIME value: '201125AZD3380HZC'; nested exception is java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'] with root cause
+java.sql.SQLException: Incorrect DATETIME value: '201125AZD3380HZC'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy169.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy167.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy106.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy110.selectByPrimaryKey(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy111.selectByPrimaryKey(Unknown Source)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:153)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$3ee4079a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 22:08:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:08:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:08:30.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:08:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:08:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:08:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:08:50.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:08:50.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:09:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:09:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 22:09:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:09:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-26 22:09:20.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:09:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:09:30.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:09:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:09:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:09:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:09:50.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:09:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:10:00.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:10:00.018 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:10:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:10:10.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:10:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:10:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:10:30.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:10:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:10:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:10:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:10:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:10:50.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
+2020-11-26 22:11:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:11:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:11:10.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:11:10.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 22:11:20.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - === 开始执行class com.soft1851.article.service.impl.ArticleServiceImpl，updateAppointToPublish====
+2020-11-26 22:11:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
