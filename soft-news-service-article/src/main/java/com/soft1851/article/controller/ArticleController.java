@@ -8,18 +8,24 @@ import com.soft1851.enums.ArticleReviewStatus;
 import com.soft1851.enums.YesOrNo;
 import com.soft1851.pojo.Category;
 import com.soft1851.pojo.bo.NewArticleBO;
+import com.soft1851.pojo.vo.AppUserVo;
+import com.soft1851.pojo.vo.ArticleDetailVO;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
 import com.soft1851.utils.JsonUtil;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import javax.validation.Valid;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author zhao
@@ -32,6 +38,7 @@ import java.util.Map;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class ArticleController extends BaseController implements ArticleControllerApi {
     private final ArticleService articleService;
+    private final RestTemplate restTemplate;
 
     @Override
     public GraceResult createArticle(@Valid NewArticleBO newArticleBO, BindingResult result) {
@@ -102,7 +109,49 @@ public class ArticleController extends BaseController implements ArticleControll
 
     @Override
     public GraceResult detail(String articleId) {
-        return null;
+        ArticleDetailVO detailVo = articleService.queryDetail(articleId);
+        Set<String> idSet = new HashSet<>();
+        idSet.add(detailVo.getPublishUserId());
+        List<AppUserVo> publisherList = getPublisherList(idSet);
+        if(!publisherList.isEmpty()){
+            detailVo.setPublishUserName(publisherList.get(0).getNickname());
+        }
+        detailVo.setReadCounts(getCountsFromRedis(REDIS_ARTICLE_READ_COUNTS+":"+articleId));
+        return GraceResult.ok(detailVo);
+    }
+
+    /**
+     * 发起远程调用，获得用户的基本信息
+     *
+     * @param idSet id集合
+     * @return List<AppUserVO>
+     */
+    private List<AppUserVo> getPublisherList(Set<String> idSet) {
+        String userServerUrlExecute = "http://localhost:8003/user/queryByIds?userIds=" + JsonUtil.objectToJson(idSet);
+        ResponseEntity<GraceResult> responseEntity
+                = restTemplate.getForEntity(userServerUrlExecute, GraceResult.class);
+        GraceResult bodyResult = responseEntity.getBody();
+        List<AppUserVo> publisherList = null;
+        assert bodyResult != null;
+        if (bodyResult.getStatus() == 200) {
+            String userJson = JsonUtil.objectToJson(bodyResult.getData());
+            publisherList = JsonUtil.jsonToList(userJson, AppUserVo.class);
+        }
+        return publisherList;
+    }
+
+    /**
+     * 从redis根据key读取阅读量
+     *
+     * @param key key
+     * @return value
+     */
+    private Integer getCountsFromRedis(String key) {
+        String countsStr = redis.get(key);
+        if (StringUtils.isBlank(countsStr)) {
+            countsStr = "0";
+        }
+        return Integer.valueOf(countsStr);
     }
 
 

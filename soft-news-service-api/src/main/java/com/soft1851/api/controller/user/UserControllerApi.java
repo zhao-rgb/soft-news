@@ -64,6 +64,6 @@ public interface UserControllerApi {
      * @return GraceResult
      */
     @ApiOperation(value = "根据用户的ids查询用户列表",notes = "根据用户的ids查询用户列表",httpMethod = "GET")
-    @GetMapping("/s")
+    @GetMapping("/queryByIds")
     GraceResult queryByIds(@RequestParam String userIds);
 }
