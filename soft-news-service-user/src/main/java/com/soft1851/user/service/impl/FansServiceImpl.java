@@ -60,4 +60,16 @@ public class FansServiceImpl extends BaseService implements FansService {
         // redis 我的关注数累加
         redis.increment(REDIS_MY_FOLLOW_COUNTS + ":" + fanId, 1);
     }
+
+    @Override
+    public void unfollow(String writerId, String fanId) {
+        Fans fans = new Fans();
+        fans.setWriterId(writerId);
+        fans.setFanId(fanId);
+        fansMapper.delete(fans);
+        // redis 作者粉丝数累减
+        redis.decrement(REDIS_WRITER_FANS_COUNTS + ":" + writerId, 1);
+        // redis 当前用户的（我的）关注数累减
+        redis.decrement(REDIS_MY_FOLLOW_COUNTS + ":" + fanId, 1);
+    }
 }
