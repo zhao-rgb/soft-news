@@ -25,9 +25,9 @@ public class ArticleReadInterceptor extends BaseInterceptor implements HandlerIn
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception{
         String articleId = request.getParameter("articleId");
-        String userId = IpUtil.getRequestIp(request);
-        boolean isExist = redis.keyIsExist(REDIS_ALREADY_READ+":"+articleId+":"+userId);
-        return isExist;
+        String userIp = IpUtil.getRequestIp(request);
+        boolean isExist = redis.keyIsExist(REDIS_ALREADY_READ + ":" + articleId + ":" + userIp);
+        return !isExist;
     }
 
     @Override

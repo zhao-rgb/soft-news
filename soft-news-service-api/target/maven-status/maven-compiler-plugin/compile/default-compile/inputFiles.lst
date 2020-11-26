@@ -4,6 +4,8 @@ E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\inte
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\aspect\ServiceLogAspect.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\CloudConfig.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\UserControllerApi.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\ArticleReadInterceptor.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\service\BaseService.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\Swagger2.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\BaseInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\PassportControllerApi.java
@@ -18,4 +20,5 @@ E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\cont
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\admin\AdminMsgControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\AdminTokenInterceptor.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\BaseController.java
+E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\FansControllerApi.java
 E:\play-code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\category\CategoryControllerApi.java
